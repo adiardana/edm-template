@@ -1,0 +1,11 @@
+<mjml>
+  <mj-body>
+    <mj-container>
+      <mj-include path="./includes/header" />
+
+      <mj-include path="./includes/content" />
+
+      <mj-include path="./includes/footer" />
+    </mj-container>
+  </mj-body>
+</mjml>

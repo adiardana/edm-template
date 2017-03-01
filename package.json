@@ -1,0 +1,16 @@
+{
+  "name": "edm-template",
+  "version": "1.0.0",
+  "description": "eDM Template using mjml + gulp",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp-image": "^2.7.5",
+    "gulp-mjml": "^2.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adi Ardana",
+  "license": "ISC"
+}
