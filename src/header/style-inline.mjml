@@ -1,0 +1,5 @@
+<mj-style inline="inline">
+  body{
+    background-color: #fff;
+  }
+</mj-style>

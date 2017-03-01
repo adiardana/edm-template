@@ -1,4 +1,4 @@
-<mj-section padding="0px">
+<mj-section>
   <mj-column width="600">
     <mj-text>Email header</mj-text>
   </mj-column>

@@ -1,11 +1,16 @@
+<!-- DOCS : https://mjml.io/documentation/ -->
 <mjml>
+  <mj-head>
+    <mj-include path="./src/header/style-responsive" />
+    <mj-include path="./src/header/style-inline" />
+  </mj-head>
   <mj-body>
-    <mj-container>
-      <mj-include path="./includes/header" />
+    <mj-container background-color="#888888">
+      <mj-include path="./src/header" />
 
-      <mj-include path="./includes/content" />
+      <mj-include path="./src/content" />
 
-      <mj-include path="./includes/footer" />
+      <mj-include path="./src/footer" />
     </mj-container>
   </mj-body>
 </mjml>
