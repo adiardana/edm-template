@@ -30,9 +30,9 @@ gulp.task('mjml', function () {
 
 gulp.task('default', function() {
   browserSync.init({
-      server: {
-          baseDir: "./html"
-      }
+    server: {
+      baseDir: "./html"
+    }
   });
 
   gulp.watch(['./**/*.mjml'], ['mjml']);
