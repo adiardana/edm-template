@@ -1,18 +1,28 @@
 {
   "name": "edm-template",
   "version": "1.0.0",
-  "description": "eDM Template using mjml + gulp",
-  "main": "gulpfile.js",
-  "dependencies": {},
-  "devDependencies": {
-    "browser-sync": "^2.18.8",
-    "gulp": "^3.9.1",
-    "gulp-image": "^2.7.5",
-    "gulp-mjml": "^2.0.0"
-  },
+  "description": "eDM Template",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adiardana/edm-template.git"
+  },
   "author": "Adi Ardana",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adiardana/edm-template/issues"
+  },
+  "homepage": "https://github.com/adiardana/edm-template#readme",
+  "dependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-file-include": "^1.0.0"
+  },
+  "devDependencies": {
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0"
+  }
 }

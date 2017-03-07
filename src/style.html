@@ -1,0 +1,94 @@
+<style type="text/css">
+  /*==========================================================
+      Reset & Structure
+  ==========================================================*/
+  /* GENERAL & DESKTOP */
+  #outlook a { padding:0; } /* Force Outlook to provide a "view in browser" menu link. */
+  body { margin:0; padding:0; width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; }/* Prevent Webkit and Windows Mobile from changing default font sizes*/
+  .ExternalClass { width:100%; } /* Force Hotmail to display emails at full width */
+  .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100%; } /* Force Hotmail to display normal line spacing.*/
+  .backgroundTable { line-height: 100% !important; margin:0; padding:0; width:100% !important; }
+  img { border:none; outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; }
+  a img { border:none; }
+  .image_fix { display:block; }
+  p { margin: 0px 0px !important; }
+  a { text-decoration:none!important; }
+
+  table td { border-collapse: collapse; }
+  table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+  table.full { clear: both; width: 100%; }
+  table.largeTwoColumn { max-width: 100% !important; }
+  table.floating, td.floating { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }  /* Removes margins next to floating tables Outlook 2007, 2010. Also applied to first td in floating tables */
+  td.empty { font-size:1px; line-height:1px; mso-line-height-rule: exactly; }
+
+  *[class=hideDesktop], .hideDesktop {display:none!important; width:0px !important;}
+  *[class=hideMobile], .hideMobile {display:block!important; width:0px !important;}
+
+  /* TABLET STYLES - use [class*=className] to make Yahoo respect the media queries */
+  @media only screen and (max-width: 640px) {
+    a[href^="tel"], a[href^="sms"] { cursor: default; pointer-events: none; text-decoration: none; }
+    .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] { cursor: default; pointer-events: auto; text-decoration: default; }
+    table[class*=devicewidth], .devicewidth { width: 440px!important; }
+    table[class*=paddedTable], td[class*=paddedTable], .paddedTable { width: 388px!important; }
+    table[class*=devicewidthinner], .devicewidthinner { width: 400px!important; }
+    table[class*=removeMobile], td[class*=removeMobile], br[class*=removeMobile], .removeMobile{ display:none!important; }
+
+    table[class*=content_inside], .content_inside{ width:388px !important; }
+    table[class*=devicewidthOutside], .devicewidthOutside { width: 440px!important; }
+    table[class*=colProd], .colProd{ width:100% !important;}
+
+    *[class=hide],.hide {display:none!important; width:0px !important;}
+    *[class=show], .show {width:100%!important; height:auto!important;display:table!important;}
+    *[class=me], .me {display:block!important; width:100%!important; max-height:inherit!important; overflow:visible!important;}
+    *[class=themoney], .themoney {display: block!important; width:100% !important;height:auto !important; float:none!important;}
+    td[class*=spacer], .spacer{width:6% !important}
+    *[class*=separatorTable], .separatorTable { display: block; width: 100% !important;height: 30px !important;}
+    *[class*=separatorTable] td, .separatorTable td, .separatorTableTd{ height: 30px !important;width: 100% !important; }
+    *[class*=ctaTable], .ctaTable {width: 100% !important;}
+    *[class*=ctaRow], .ctaRow {display: none !important; width: 0px !important;}
+    *[class*=ctaTable] td, .ctaTable td {height: 48px !important;font-size: 16px !important;}
+    *[class*=ctaTable] td a, .ctaTable td a{padding-top: 17px !important;padding-bottom: 17px !important;}
+  }
+
+  /* PHONE STYLES - use [class*=className] to make Yahoo respect the media queries */
+  @media only screen and (max-width: 480px) {
+    a[href^="tel"], a[href^="sms"] { cursor: default; pointer-events: none; text-decoration: none; }
+    .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] { cursor: default; pointer-events: auto; text-decoration: default; }
+    table[class*=devicewidth], .devicewidth { width: 280px!important; }
+    table[class*=paddedTable], td[class*=paddedTable], .paddedTable { width: 250px!important; }
+    table[class*=devicewidthinner], .devicewidthinner { width: 260px!important; }
+
+    table[class*=content_inside], .content_inside{ width:100% !important; }
+    table[class*=devicewidthOutside], .devicewidthOutside { width: 100%!important; }
+    table[class*=devicewidth], .devicewidth { width: 100%!important; }
+    table[class*=paddedTable], td[class*=paddedTable], .paddedTable { width: 100%!important; }
+    td[class*=spacer], .spacer{width:6% !important}
+
+    *[class*=hideMobile], .hideMobile{display:none!important; width:0px !important;}
+  }
+
+  /*==========================================================
+      Reset & Structure
+  ==========================================================*/
+
+  .backgroundTable, body { background-color: #383838; }
+  .backgroundTableGrey { background-color: #383838; }
+  .containerPanel { background-color: #0f191d; }
+  .contentPanel { background-color: #0f191d; }
+  .separatorPanel { background-color: #ffffff; }
+  .separatorLine { background-color: #ffffff; }
+  .containerPanelOutside{background:#d00f0f;}
+
+  .mac_fix a{color:#ffffff !important}
+  /* for outlook */
+  a.linkblack {text-decoration:none !important; color: #000000 !important; display: block !important; width: 100% !important;}
+  a.linkwhite {text-decoration:none !important; color: #ffffff !important;}
+  a.linkwhite-underline {text-decoration:underline !important; color: #ffffff !important;}
+  a.linkgrey-underline {text-decoration:underline !important; color: #dadada !important;}
+  a.linkpink, .linkpink a, .linkpink {color: #e5007b !important;}
+  a.link-black-underline, .link-black-underline a{text-decoration:underline !important;color:#ffffff !important;}
+  .link-black-nounderline a{text-decoration:none !important;color:#ffffff !important;}
+
+  /*for yahoo*/
+  .y_fix{margin: 0 auto;}
+</style>
