@@ -10,44 +10,38 @@
             <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth y_fix" style="width:600px;">
               <tbody><tr>
 
-                <td width="50" class="spacer" valign="top" align="left"><img src="images/spacer.png" style="border-style:none;outline-style:none;text-decoration:none" alt="space" /></td>
+                @@include("src/component/spacer.html", {
+                  "width": "50"
+                })
 
                 <td width="500" align="center">
 
                   <table width="500" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth paddedTable" style="width:500px;">
                     <tbody>
                       <!-- Spacing -->
-                      <tr>
-                        <td width="500" height="9" class="empty">&nbsp;</td>
-                      </tr>
+                      @@include("src/component/separator.html", {
+                        "height": "9px"
+                      })
                       <!-- Spacing -->
 
                       <!-- content -->
                       <tr>
                         <td width="500" align="left" style="line-height:10px">
-                          <span style="font-family:Helvetica, Arial, sans-serif; color:#ffffff; font-size:10px; line-height:13px;">
-                          <a href="#" target="_blank" class="linkwhite-underline" style="text-decoration:underline; color: #ffffff;"><u>Click here</u></a> to unsubscribe from future email correspondence.<br />
-                          <a href="#" target="_blank" class="linkwhite-underline" style="text-decoration:underline; color: #ffffff;"><u>Click here</u></a> to view our privacy policy.
-                          </span>
+                          @@include("src/component/footer-link.html")
                         </td>
                       </tr>
                       <!-- End of content -->
 
                       <!-- Spacing -->
-                      <tr>
-                        <td width="500" height="10" class="empty">&nbsp;</td>
-                      </tr>
+                      @@include("src/component/separator.html", {
+                        "height": "10px"
+                      })
                       <!-- Spacing -->
 
                       <!-- iPad fix -->
                       <tr>
                         <td width="500" align="left">
-                          <table width="500" align="left" border="0" cellpadding="0" cellspacing="0" class="content_inside" style="width:500px;">
-                            <tbody><tr>
-                              <td width="265" height="1" align="left" class="empty">&nbsp;</td>
-                              <td width="265" height="1"  align="left" class="empty">&nbsp;</td>
-                            </tr></tbody>
-                          </table>
+                          @@include("src/component/ipad-fix.html")
                         </td>
                       </tr>
                       <!-- End of iPad fix -->
@@ -57,7 +51,9 @@
 
                 </td>
 
-                <td width="50" class="spacer" valign="top" align="left"><img src="images/spacer.png" style="border-style:none;outline-style:none;text-decoration:none" alt="space" /></td>
+                @@include("src/component/spacer.html", {
+                  "width": "50"
+                })
 
               </tr></tbody>
             </table>

@@ -1,0 +1,83 @@
+<table bgcolor="#0f191d" width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tbody>
+    <tr>
+      @@include("src/component/spacer.html", {
+        "width": "50"
+      })
+      <td>
+        <table bgcolor="#0f191d" width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tbody>
+            @@include("src/component/separator.html", {
+              "height": "28"
+            })
+            <tr>
+              <td>
+                @@include("src/component/text.html", {
+                  "text": "THE PERFECTIONIST.",
+                  "style": "font-weight: bold;font-size: 33px;line-height: 33px;"
+                })
+              </td>
+            </tr>
+            @@include("src/component/separator.html", {
+              "height": "5"
+            })
+            <tr>
+              <td>
+                @@include("src/component/text.html", {
+                  "text": "ARRIVING IN DEALERSHIPS SOON.",
+                  "style": "font-weight: bold;font-size: 17px;line-height: 17px;"
+                })
+              </td>
+            </tr>
+            @@include("src/component/separator.html", {
+              "height": "62"
+            })
+            <tr>
+              <td>
+                <span style="
+                font-family: Arial,Helvetica, sans-serif;
+                color:#ffffff;
+                font-size:14px;
+                line-height:18px;">Dear <span style="color: #e5007b;">&lt;Title&gt; &lt;Surname&gt;</span>,<br/><br/>
+                @@include("src/component/text.html", {
+                  "text": "Thank you for your interest in the seventh generation BMW 5 Series. Pushing the boundaries of automotive technology, luxury and performance, it is without doubt the best yet."
+                })
+                <br/><br/>
+                @@include("src/component/text.html", {
+                  "text": "FIVE REASONS WHY YOU WILL LOVE THE BMW 5 SERIES:",
+                  "style": "font-weight: bold;"
+                })
+              </td>
+            </tr>
+            @@include("src/component/separator.html", {
+              "height": "15"
+            })
+            <!-- List -->
+            <tr>
+              <td>
+                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                  <tbody>
+                    @@loop('src/component/list.html', [
+                      { "text": "Intuitive technology that allows you to perform simple functions with a sweep of your hand." },
+                      { "text": "Seamless connectivity that reinvents the way you connect with your car to make your driving experiences more pleasurable and personal." },
+                      { "text": "Cutting edge semi-automated driving systems, with enhanced safety and driver comfort." },
+                      { "text": "Intelligent information that keeps you moving, with speed limit assist and speed limit information." },
+                      { "text": "Peerless luxury through craftsmanship and detail." }
+                    ])
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <!-- List -->
+            @@include("src/component/separator.html", {
+              "height": "39"
+            })
+          </tbody>
+        </table>
+      </td>
+      @@include("src/component/spacer.html", {
+        "width": "50"
+      })
+    </tr>
+  </tbody>
+</table>
